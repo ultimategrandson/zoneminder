@@ -24,19 +24,19 @@
 #include "zm_define.h"
 
 extern "C" {
-#include <libswresample/swresample.h>
+#include <ffmpeg4.4/libswresample/swresample.h>
 
 // AVUTIL
-#include <libavutil/avassert.h>
-#include <libavutil/avutil.h>
-#include <libavutil/base64.h>
-#include <libavutil/mathematics.h>
-#include <libavutil/avstring.h>
-#include <libavutil/audio_fifo.h>
-#include <libavutil/imgutils.h>
-#include <libavutil/opt.h>
+#include <ffmpeg4.4/libavutil/avassert.h>
+#include <ffmpeg4.4/libavutil/avutil.h>
+#include <ffmpeg4.4/libavutil/base64.h>
+#include <ffmpeg4.4/libavutil/mathematics.h>
+#include <ffmpeg4.4/libavutil/avstring.h>
+#include <ffmpeg4.4/libavutil/audio_fifo.h>
+#include <ffmpeg4.4/libavutil/imgutils.h>
+#include <ffmpeg4.4/libavutil/opt.h>
 #if HAVE_LIBAVUTIL_HWCONTEXT_H
-  #include <libavutil/hwcontext.h>
+  #include <ffmpeg4.4/libavutil/hwcontext.h>
 #endif
 
 /* LIBAVUTIL_VERSION_CHECK checks for the right version of libav and FFmpeg
@@ -51,7 +51,7 @@ extern "C" {
 #define _AVPIXELFORMAT AVPixelFormat
 
 // AVCODEC
-#include <libavcodec/avcodec.h>
+#include <ffmpeg4.4/libavcodec/avcodec.h>
 
 /*
  * LIBAVCODEC_VERSION_CHECK checks for the right version of libav and FFmpeg
@@ -66,7 +66,7 @@ extern "C" {
 #define _AVCODECID AVCodecID
 
 // AVFORMAT
-#include <libavformat/avformat.h>
+#include <ffmpeg4.4/libavformat/avformat.h>
 
 /* LIBAVFORMAT_VERSION_CHECK checks for the right version of libav and FFmpeg
  * The original source is vlc (in modules/codec/avcodec/avcommon_compat.h)
@@ -78,7 +78,7 @@ extern "C" {
       (LIBAVFORMAT_VERSION_MICRO >= 100 && LIBAVFORMAT_VERSION_INT >= AV_VERSION_INT(a, d, e) ) )
 
 // SWSCALE
-#include <libswscale/swscale.h>
+#include <ffmpeg4.4/libswscale/swscale.h>
 
 /* LIBSWSCALE_VERSION_CHECK checks for the right version of libav and FFmpeg
  * a is the major version

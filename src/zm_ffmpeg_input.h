@@ -4,9 +4,9 @@
 #include "zm_define.h"
 
 extern "C" {
-#include <libavformat/avformat.h>
-#include <libavformat/avio.h>
-#include <libavcodec/avcodec.h>
+#include <ffmpeg4.4/libavformat/avformat.h>
+#include <ffmpeg4.4/libavformat/avio.h>
+#include <ffmpeg4.4/libavcodec/avcodec.h>
 }
 
 class FFmpeg_Input {
