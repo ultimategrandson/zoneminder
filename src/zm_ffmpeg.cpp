@@ -281,11 +281,11 @@ void zm_dump_stream_format(AVFormatContext *ic, int i, int index, int is_output)
   int flags = (is_output ? ic->oformat->flags : ic->iformat->flags);
   AVStream *st = ic->streams[i];
   AVDictionaryEntry *lang = av_dict_get(st->metadata, "language", nullptr, 0);
-#if LIBAVCODEC_VERSION_CHECK(57, 64, 0, 64, 0)
+//#if LIBAVCODEC_VERSION_CHECK(57, 64, 0, 64, 0)
   AVCodecParameters *codec = st->codecpar;
-#else
-  AVCodecContext *codec = st->codec;
-#endif
+//#else
+//  AVCodecContext *codec = st->codec;
+//#endif
 
   Debug(1, "    Stream #%d:%d", index, i);
 
