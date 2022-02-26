@@ -87,7 +87,7 @@ void FFMPEGInit() {
       av_log_set_level(AV_LOG_QUIET);
     }
 #if !LIBAVFORMAT_VERSION_CHECK(58, 9, 58, 9, 0)
-    av_register_all();
+    //av_register_all();
 #endif
     avformat_network_init();
     bInit = true;
